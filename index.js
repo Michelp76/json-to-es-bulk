@@ -99,6 +99,8 @@ stream.once("open", function (fd) {
     //
     record.POMESSAGE = stripChars(record.POMESSAGE);
     //
+    record.RECOMM = stripChars(record.RECOMM);
+    //
     // --------------------------------------------------------------------------
 
     stream.write(JSON.stringify(record) + "\n");
